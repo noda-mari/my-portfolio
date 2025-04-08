@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#84acad] rounded-[20px] shadow-md overflow-hidden w-[300px] max-w-sm mx-auto">
+    <div class="bg-[#84acad] rounded-[20px] shadow-md overflow-hidden w-[250px] max-w-sm mx-auto">
       <img :src="image" alt="card image" class="w-full h-[150px] object-cover" />
       <div class="p-[5px]">
         <p class="text-[#2a2d31] font-bold px-[5px] mt-[0] mb-[3px]">{{ title }}</p>
