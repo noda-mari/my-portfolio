@@ -32,8 +32,8 @@
                         ]" />
                         <Card :image="book" title="📚辞書アプリ" period="2024/11~現在" :tags="[
                             { label: 'laravel', color: 'bg-red' },
-                            { label: 'PHP', color: 'bg-acent text-white' },
-                            { label: 'JavaScript', color: 'bg-yellow text-white' }
+                            { label: 'Next.js', color: 'bg-blue' },
+                            { label: 'TypeScript', color: 'bg-mint text-white' }
                         ]" />
                     </div>
                 </div>
@@ -41,13 +41,13 @@
                     <p class="mb-3">案件参画実績</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 justify-start ">
                         <Card :image="handshake" title="🏢就職・採用マッチングアプリ開発" period="2024/09~2024/10" :tags="[
-                            { label: 'laravel', color: 'bg-red' },
-                            { label: 'PHP', color: 'bg-acent text-white' },
-                            { label: 'JavaScript', color: 'bg-yellow text-white' }
+                            { label: 'Next.js', color: 'bg-blue' },
+                            { label: 'TypeScript', color: 'bg-mint text-white' },
+                            { label: 'GraphQL', color: 'bg-pink text-white' }
                         ]" />
                         <Card :image="labo" title="📝研究業績マネジメントアプリ開発" period="2025/01~2025/05" :tags="[
-                            { label: 'laravel', color: 'bg-red' },
-                            { label: 'PHP', color: 'bg-acent text-white' },
+                            { label: 'Dynamics', color: 'bg-[#ad5059]' },
+                            { label: 'Nuxt.js', color: 'bg-nuxt text-black' },
                             { label: 'JavaScript', color: 'bg-yellow text-white' }
                         ]" />
                     </div>
