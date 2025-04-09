@@ -4,15 +4,15 @@
     <div class="grid grid-cols-6 gap-4">
       <div class="col-span-3">
         <div class="flex flex-col gap-4">
-          <img v-for="(image, index) in app.imageList" :key="index" :src="image" alt=""
-            class="w-full max-w-md rounded border" />
+          <img v-for="(image, index) in app.imageList" :key="index" :src="image" alt="アプリ画面"
+            class="w-full max-w-md rounded border cursor-pointer" @click="openModal(index)" />
         </div>
       </div>
       <div class="col-span-3 flex flex-col gap-6">
         <p>製作期間：{{ app.duration }}</p>
         <div>
           <h2 class="text-lg font-bold">【概要】</h2>
-          <p>{{ app.description }}</p>
+          <p class="w-3/4">{{ app.description }}</p>
         </div>
         <div>
           <h2 class="text-lg font-bold mb-1.5">【使用技術】</h2>
@@ -60,7 +60,13 @@
       </div>
     </div>
 
-    <img :src="app.image" alt="" class="w-full max-w-md mb-4" />
+    <ImageModal
+  :show="showModal"
+  :imageList="app.imageList"
+  :currentIndex="modalIndex"
+  @close="showModal = false"
+  @update:index="modalIndex = $event"
+/>
 
   </div>
   <div v-else>
@@ -72,11 +78,19 @@
 import { useRoute } from 'vue-router'
 import { apps } from '@/data/apps'
 import Tag from '@/components/Tag.vue'
-
+import { ref } from 'vue'
+import ImageModal from '@/components/ImageModal.vue'
 
 const route = useRoute()
 const app = apps.find(a => a.slug === route.params.slug)
 
+const showModal = ref(false)
+const modalIndex = ref(0)
+
+const openModal = (index) => {
+  modalIndex.value = index
+  showModal.value = true
+}
 
 
 console.log(app)
