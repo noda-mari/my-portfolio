@@ -1,4 +1,5 @@
 <template>
+  <RouterLink :to="`/work/${slug}`"class="block">
     <div class="bg-[#84acad] rounded-[20px] shadow-md overflow-hidden w-[250px] max-w-sm mx-auto">
       <img :src="image" alt="card image" class="w-full h-[150px] object-cover" />
       <div class="p-[5px]">
@@ -14,6 +15,7 @@
         </div>
       </div>
     </div>
+  </RouterLink>
   </template>
   
   <script setup lang="ts">
@@ -24,6 +26,7 @@
     title: string
     period: string
     tags: { label: string; color: string }[]
+    slug: string
   }>()
   </script>
   
