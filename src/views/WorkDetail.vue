@@ -3,7 +3,10 @@
     <h1 class="text-3xl font-bold mb-2 text-center">{{ app.title }}</h1>
     <div class="grid grid-cols-6 gap-4">
       <div class="col-span-3">
-        <p class="mb-4">{{ app.duration }}</p>
+        <div class="flex flex-col gap-4">
+          <img v-for="(image, index) in app.imageList" :key="index" :src="image" alt=""
+            class="w-full max-w-md rounded border" />
+        </div>
       </div>
       <div class="col-span-3 flex flex-col gap-6">
         <p>製作期間：{{ app.duration }}</p>

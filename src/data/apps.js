@@ -38,7 +38,12 @@ export const apps = [
       "Github",
       "GoogleSpreadSheet"
     ],
-    image: "/assets/kintai.png",
+    imageList: [
+      "/atte-login.png",
+      "/atte-home.png",
+      "/atte-timeView.png",
+      "/atte-userView.png"
+    ] 
   },
   {
     slug: "rese",
