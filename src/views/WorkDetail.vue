@@ -14,6 +14,17 @@
           <h2 class="text-lg font-bold">【概要】</h2>
           <p class="w-3/4">{{ app.description }}</p>
         </div>
+        <div v-if="app.gitHubUrl">
+          <h2 class="text-lg font-bold">【Github URL】</h2>
+          <a
+            :href="app.gitHubUrl"
+            class="w-3/4 text-blue-400 hover:underline break-words"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+          {{ app.gitHubUrl }}
+          </a>
+        </div>
         <div>
           <h2 class="text-lg font-bold mb-1.5">【使用技術】</h2>
           <div class="flex gap-2">
