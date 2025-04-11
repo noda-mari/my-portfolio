@@ -97,50 +97,51 @@
                     </p>
 
                     <div name="fade">
-                        <div v-if="lowCode" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 mb-2 justify-start ">
+                        <div v-if="lowCode"
+                            class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 mb-2 justify-start ">
                             <Chart v-for="skill in lowCodeSkills" :key="skill.label" :label="skill.label"
                                 :value="skill.value" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-green w-3/4  flex flex-col m-auto p-3 gap-2 rounded-sm mb-5">
+            <div class="bg-green w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm mb-5">
                 <h2 class="font-bold text-3xl">💼 Career</h2>
                 <div class="py-2 px-5">
-                    <div class="bg-naby">
-                        <h3 class="career-h3 p-1">📝 2024年10月 - 現在　フリーランスプログラマーとして活動中</h3>
-                    </div>
+
+                    <CareerItem title="🏃‍♂️ 2024年10月 - 現在　フリーランスプログラマーとして活動中" :onClick="() => openModal('freePg')" />
                     <div class="mb-5">
                         <li class="career-li">研究業績のマネジメントアプリ開発（４か月）</li>
                         <li class="career-li">就職・採用マッチングアプリのフロントエンド開発（２か月）</li>
                     </div>
-                    <div class="bg-naby">
-                        <h3 class="career-h3 p-1">📝 2011年8月 - 2023年5月　アミューズメント企業にて勤務（アルバイト・正社員）</h3>
-                    </div>
+
+                    <CareerItem title="🎪 2011年8月 - 2023年5月　アミューズメント企業にて勤務（アルバイト・正社員）"
+                        :onClick="() => openModal('amusement')" />
                     <div class="mb-5">
                         <li class="career-li">商品発注、新人教育、接客指導のリーダーを担当（９年・社員）</li>
                         <li class="career-li">フロント接客（２年・アルバイト）</li>
                     </div>
-                    <div class="bg-naby">
-                        <h3 class="career-h3 p-1">📝 2010年9月 - 2011年7月　金融業（生命保険）にて勤務（個人事業主）</h3>
-                    </div>
+
+                    <CareerItem title="🏢 2010年9月 - 2011年7月　金融業（生命保険）にて勤務（個人事業主）"
+                        :onClick="() => openModal('insurance')" />
                     <div class="mb-5">
                         <li class="career-li">新規顧客の開拓、保険の提案、契約の締結‧アフターフォロー（８か月）</li>
                     </div>
-                    <div class="bg-naby">
-                        <h3 class="career-h3 p-1">📝 2005年6月 - 2010年8月　小売企業にて勤務（正社員）</h3>
-                    </div>
+
+                    <CareerItem title="🏪 2005年6月 - 2010年8月　小売企業にて勤務（正社員）"
+                        :onClick="() => openModal('convenienceStore')" />
                     <div class="mb-5">
                         <li class="career-li">レジ対応、商品発注、シフト管理、新人スタッフトレーニングを担当（５年）</li>
                     </div>
-                    <div class="bg-naby">
-                        <h3 class="career-h3 p-1">📝 2005年3月 横浜市立鶴見工業学校 化学科 卒業</h3>
-                    </div>
+
+                    <CareerItem title="🏫 2005年3月 横浜市立鶴見工業学校 化学科 卒業" :onClick="() => openModal('highScool')" />
+
                 </div>
             </div>
         </div>
 
     </div>
+    <CareerModal :isOpen="show" :slug="selectedSlug" @close="show = false" />
 
 </template>
 
@@ -153,12 +154,21 @@ import clock from '@/assets/clock.jpg'
 import book from '@/assets/book.jpg'
 import handshake from '@/assets/handshake.jpg'
 import labo from '@/assets/labo.jpg'
+import CareerModal from '@/components/Modal.vue'
+import CareerItem from '../components/CareerItem.vue'
 
 import { ref } from 'vue'
 
 const showFrontend = ref(false)
 const backFrontend = ref(false)
 const lowCode = ref(false)
+const show = ref(false)
+const selectedSlug = ref('')
+
+const openModal = (slug: string) => {
+    selectedSlug.value = slug
+    show.value = true
+}
 
 
 const frontSkills = [
