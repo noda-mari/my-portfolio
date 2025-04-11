@@ -8,12 +8,19 @@
         </div>
 
         <div class="flex flex-col gap-5">
-            <div class="bg-green w-3/4  m-auto p-3 rounded-sm">
-                <h2 class="font-bold text-3xl">💡About me</h2>
-                <p>千葉県在住のフリーランスプログラマーです。</p>
-                <p>プログラミングスクールにてLaravel、PHP、MySQL、Dockerを学びました。</p>
-                <p>現在は、Next.jsとReactを用いた求人アプリの開発、Nuxt.jsとMicrosoft Dynamicsを使用した業務系アプリの開発等の案件参画経験が約半年ございます。</p>
-                <p>これからもチーム開発や業務改善に貢献できるよう、技術のキャッチアップと実践を大切にしながら成長を続けていきます。どうぞよろしくお願いいたします。</p>
+            <div class="grid grid-cols-3 bg-green w-3/4  m-auto p-3 rounded-sm">
+                <div class="col-span-2">
+                    <h2 class="font-bold text-3xl">💡About me</h2>
+                    <div class="p-3">
+                        <p>千葉県在住のフリーランスプログラマーです。</p>
+                        <p>プログラミングスクールにてLaravel、PHP、MySQL、Dockerを学びました。</p>
+                        <p>現在は、Next.jsとReactを用いた求人アプリの開発、Nuxt.jsとMicrosoft Dynamicsを使用した業務系アプリの開発等の案件参画経験が約半年ございます。</p>
+                        <p>これからもチーム開発や業務改善に貢献できるよう、技術のキャッチアップと実践を大切にしながら成長を続けていきます。どうぞよろしくお願いいたします。</p>
+                    </div>
+                </div>
+                <div class="col-span-2">
+
+                </div>
             </div>
 
             <div class="bg-green w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
@@ -21,90 +28,79 @@
                 <div class="px-4">
                     <p class="mb-3">個人開発</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 justify-start">
-                        <Card
-                            :slug="'atte'"
-                            :image="clock" 
-                            title="🕑勤怠管理アプリ" 
-                            period="2024/12~2024/02" 
-                            :tags="[
-                                { label: 'laravel', color: 'bg-red' },
-                                { label: 'PHP', color: 'bg-acent text-white' },
-                            ]" 
-                        />
-                        <Card 
-                            :slug="'rese'"
-                            :image="dinner" 
-                            title="🍔飲食店予約アプリ" 
-                            period="2024/02~2024/04" 
-                            :tags="[
-                                { label: 'laravel', color: 'bg-red' },
-                                { label: 'PHP', color: 'bg-acent text-white' },
-                                { label: 'jQuery', color: 'bg-yellow text-white' }
-                            ]" 
-                        />
-                        <Card 
-                            :slug="'dictionary'"
-                            :image="book" 
-                            title="📚辞書アプリ" 
-                            period="2024/11~現在" 
-                            :tags="[
-                                { label: 'laravel', color: 'bg-red' },
-                                { label: 'Next.js', color: 'bg-blue' },
-                                { label: 'TypeScript', color: 'bg-mint text-white' }
-                            ]" 
-                        />
+                        <Card :slug="'atte'" :image="clock" title="🕑勤怠管理アプリ" period="2024/12~2024/02" :tags="[
+                            { label: 'laravel', color: 'bg-red' },
+                            { label: 'PHP', color: 'bg-acent text-white' },
+                        ]" />
+                        <Card :slug="'rese'" :image="dinner" title="🍔飲食店予約アプリ" period="2024/02~2024/04" :tags="[
+                            { label: 'laravel', color: 'bg-red' },
+                            { label: 'PHP', color: 'bg-acent text-white' },
+                            { label: 'jQuery', color: 'bg-yellow text-white' }
+                        ]" />
+                        <Card :slug="'dictionary'" :image="book" title="📚辞書アプリ" period="2024/11~現在" :tags="[
+                            { label: 'laravel', color: 'bg-red' },
+                            { label: 'Next.js', color: 'bg-blue' },
+                            { label: 'TypeScript', color: 'bg-mint text-white' }
+                        ]" />
                     </div>
                 </div>
                 <div class="px-4 mb-2">
                     <p class="mb-3">案件参画実績</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 justify-start ">
-                        <Card 
-                            :slug="'recruit'"
-                            :image="handshake" 
-                            title="🏢就職・採用マッチングアプリ開発" 
-                            period="2024/09~2024/10" 
+                        <Card :slug="'recruit'" :image="handshake" title="🏢就職・採用マッチングアプリ開発" period="2024/09~2024/10"
                             :tags="[
                                 { label: 'Next.js', color: 'bg-blue' },
                                 { label: 'TypeScript', color: 'bg-mint text-white' },
                                 { label: 'GraphQL', color: 'bg-pink text-white' }
-                            ]" 
-                        />
-                        <Card 
-                            :slug="'labo'"
-                            :image="labo" 
-                            title="📝研究業績マネジメントアプリ開発" 
-                            period="2025/01~2025/05" 
-                            :tags="[
-                                { label: 'Dynamics', color: 'bg-[#ad5059]' },
-                                { label: 'Nuxt.js', color: 'bg-nuxt text-black' },
-                                { label: 'JavaScript', color: 'bg-yellow text-white' }
-                            ]" 
-                        />
+                            ]" />
+                        <Card :slug="'labo'" :image="labo" title="📝研究業績マネジメントアプリ開発" period="2025/01~2025/05" :tags="[
+                            { label: 'Dynamics', color: 'bg-[#ad5059]' },
+                            { label: 'Nuxt.js', color: 'bg-nuxt text-black' },
+                            { label: 'JavaScript', color: 'bg-yellow text-white' }
+                        ]" />
                     </div>
                 </div>
             </div>
 
             <div class="bg-green w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
-                <h3 class="font-bold m-[0] text-3xl">🛠️ Skills</h3>
+                <h3 class="font-bold mb-3 text-3xl">🛠️ Skills</h3>
                 <div class="px-4 mb-2">
-                    <p class=" mb-3">フロントエンド</p>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 justify-start ">
-                        <Chart v-for="skill in frontSkills" :key="skill.label" :label="skill.label"
-                            :value="skill.value" />
-                    </div>
+                    <p class="mb-3 cursor-pointer select-none" @click="showFrontend = !showFrontend">
+                        フロントエンド
+                        <span class="ml-2">{{ showFrontend ? '▲' : '▼' }}</span>
+                    </p>
+                    <transition name="fade">
+                        <div v-if="showFrontend"
+                            class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 justify-start">
+                            <Chart v-for="skill in frontSkills" :key="skill.label" :label="skill.label"
+                                :value="skill.value" />
+                        </div>
+                    </transition>
                 </div>
                 <div class="px-4 mb-2">
-                    <p class="mb-3">バックエンド</p>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 justify-start ">
-                        <Chart v-for="skill in backEndSkills" :key="skill.label" :label="skill.label"
-                            :value="skill.value" />
-                    </div>
+                    <p class="mb-3 cursor-pointer select-none" @click="backFrontend = !backFrontend">
+                        バックエンド
+                        <span class="ml-2">{{ backFrontend ? '▲' : '▼' }}</span>
+                    </p>
+                    <transition name="fade">
+                        <div v-if="backFrontend"
+                            class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 justify-start ">
+                            <Chart v-for="skill in backEndSkills" :key="skill.label" :label="skill.label"
+                                :value="skill.value" />
+                        </div>
+                    </transition>
                 </div>
-                <div class="px-4 mb-2">
-                    <p class="mb-3">ローコード / 業務系プラットフォーム</p>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 justify-start ">
-                        <Chart v-for="skill in lowCodeSkills" :key="skill.label" :label="skill.label"
-                            :value="skill.value" />
+                <div class="px-4">
+                    <p class="mb-3 cursor-pointer select-none" @click="lowCode = !lowCode">
+                        ローコード
+                        <span class="ml-2">{{ lowCode ? '▲' : '▼' }}</span>
+                    </p>
+
+                    <div name="fade">
+                        <div v-if="lowCode" class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 mb-2 justify-start ">
+                            <Chart v-for="skill in lowCodeSkills" :key="skill.label" :label="skill.label"
+                                :value="skill.value" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -157,6 +153,13 @@ import clock from '@/assets/clock.jpg'
 import book from '@/assets/book.jpg'
 import handshake from '@/assets/handshake.jpg'
 import labo from '@/assets/labo.jpg'
+
+import { ref } from 'vue'
+
+const showFrontend = ref(false)
+const backFrontend = ref(false)
+const lowCode = ref(false)
+
 
 const frontSkills = [
     { label: "Vue.js", value: 50 },
