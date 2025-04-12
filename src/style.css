@@ -5,7 +5,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,28 +14,22 @@
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  background-color: #2a2d31;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  background: linear-gradient(to bottom, #0b0136, #3a4680, #351047);
 }
 
-#app {
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
+

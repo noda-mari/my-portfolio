@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import type { RouteRecordRaw } from 'vue-router'
 import Welcome from '../views/welcome.vue'
 import Home from '@/views/Home.vue'
-import About from '@/views/About.vue'
+import WorkDetail from '@/views/WorkDetail.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -13,18 +13,24 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/home',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: { header: 'main' },
   },
   {
-    path: '/about',
-    name: 'About',
-    component: About
-  }
+    path: '/work/:slug',
+    name: 'WorkDetail',
+    component: WorkDetail,
+    meta: { header: 'sub' },
+  },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior() {
+    return { top: 0, left: 0 }
+  }
 })
+
 
 export default router

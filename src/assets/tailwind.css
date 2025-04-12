@@ -5,9 +5,14 @@
     --color-green: #4b7a7c;
     --color-green-100: #cca3a7;
     --color-black: #2a2d31;
-    --color-red: #cca3a7;
-    --color-navy: #7d82b3;
+    --color-red: #cc394d;
+    --color-acent: #7d82b3;
     --color-yellow: #99916b;
+    --color-acent-100: #515373;
+    --color-naby: #30203b;
+    --color-white: #F4F5F7;
+    --color-mint: #4dbfbb;
+    --color-nuxt: #00fa9a;
+    --color-pink: #e65ea2;
     --color-modal-bg: #d3d3d3;
-
   }

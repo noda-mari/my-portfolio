@@ -1,6 +1,6 @@
 <template>
   <transition name="fade">
-    <div v-if="isOpen" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+    <div v-if="isOpen" class="fixed inset-0 z-50 flex items-center justify-center bg-[#361951] bg-opacity-80"
       @click.self="close">
       <div class="relative bg-modal-bg rounded-lg shadow-lg p-6 w-full max-w-2xl">
         <h2 class="text-xl text-black font-bold mb-4">{{ career?.title }}</h2>
