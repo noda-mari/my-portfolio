@@ -4,6 +4,7 @@
     <div class="absolute top-[30%] left-0 right-0 text-center px-1">
       <p class="font-bold text-sm text-stroke break-words whitespace-normal">{{ label }}</p>
       <p class="text-stroke text-sm">{{ value }}%</p>
+      <p :class="experienceTextColor" class="text-stroke text-sm font-bold">{{ experienceLabel }}</p>
     </div>
   </div>
 </template>
@@ -17,6 +18,7 @@ import {
   Tooltip,
   ArcElement,
 } from 'chart.js'
+import { computed } from 'vue';
 
 ChartJS.register(Title, Tooltip, ArcElement)
 
@@ -28,15 +30,23 @@ const props = defineProps < {
 
 const getColorByValue = (value: number) => {
   if (value < 30) return '#99916b'
-  if (value < 50) return '#99916b'
-  if (value < 80) return '#e69500'
+  if (value < 50) return '#e6bfb8'
+  if (value < 80) return '#b3476d'
   return '#ff7f50'
 }
+
+const experienceLabel = computed(() => {
+  return props.value >= 50 ? '実務経験あり' : '実務未経験'
+})
+
+const experienceTextColor = computed(() => {
+  return props.value >= 50 ? 'text-red-300' : 'text-blue-300'
+})
 
 const data = {
   datasets: [{
     data: [props.value, 100 - props.value],
-    backgroundColor: [getColorByValue(props.value), '#84acad'],
+    backgroundColor: [getColorByValue(props.value), '#4e5ca3'],
     borderWidth: 0,
   }]
 }
@@ -50,7 +60,7 @@ const options = {
 
 <style scoped>
 .text-stroke {
-  color: white;
+  /* color: white; */
   text-shadow:
     -1px -1px 0 #363636,
     1px -1px 0 #363636,

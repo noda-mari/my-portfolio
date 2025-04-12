@@ -1,5 +1,5 @@
 <template>
-  <div v-if="app" class="w-full p-10 flex flex-col gap-6">
+  <div v-if="app" class="w-full px-10 pt-20 flex flex-col gap-6">
     <h1 class="text-3xl font-bold mb-2 text-center">{{ app.title }}</h1>
     <div class="grid grid-cols-6 gap-4">
       <div class="col-span-3">

@@ -1,4 +1,7 @@
 <template>
+  
+  <component :is="currentHeader" topImg="/beautiful-940542_1280.jpg" />
+
   <Transition
     enter-active-class="transition duration-300 ease-out"
     enter-from-class="opacity-0 translate-x-5"
@@ -12,7 +15,21 @@
   </Transition>
 </template>
 
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+import HeaderMain from './components/Header.vue'
+import HeaderSub from '@/components/HeaderSub.vue'
 
-<style scoped>
+const route = useRoute()
 
-</style>
+const currentHeader = computed(() => {
+  switch (route.meta?.header) {
+    case 'sub':
+      return HeaderSub
+    case 'main':
+    default:
+      return HeaderMain
+  }
+})
+</script>

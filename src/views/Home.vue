@@ -1,16 +1,9 @@
 <template>
     <div class="w-full">
-
-        <img :src="topImg" alt="トップ画像" class="w-full h-48 object-cover" />
-        <div class="text-center p-4">
-            <h1 class="text-3xl font-bold">Portfolio | Noda Mari</h1>
-            <p class="text-gray-500 text-sm">🗓️ Last Updated: 2025/04/05</p>
-        </div>
-
-        <div class="flex flex-col gap-5">
-            <div class="grid grid-cols-3 bg-green w-3/4  m-auto p-3 rounded-sm">
+        <div class="flex flex-col gap-10">
+            <div class="grid grid-cols-3 bg-[#7f65a1] w-3/4  m-auto p-3 rounded-sm">
                 <div class="col-span-2">
-                    <h2 class="font-bold text-3xl">💡About me</h2>
+                    <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl">💡About me</h2>
                     <div class="p-3">
                         <p>千葉県在住のフリーランスプログラマーです。</p>
                         <p>プログラミングスクールにてLaravel、PHP、MySQL、Dockerを学びました。</p>
@@ -18,15 +11,15 @@
                         <p>これからもチーム開発や業務改善に貢献できるよう、技術のキャッチアップと実践を大切にしながら成長を続けていきます。どうぞよろしくお願いいたします。</p>
                     </div>
                 </div>
-                <div class="col-span-2">
-
+                <div class="col-span-1">
+                    <img  src="../assets/portfolio-img.png" alt="" class="w-full max-w-[200px] aspect-square object-cover rounded-full m-auto">
                 </div>
             </div>
 
-            <div class="bg-green w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
-                <h2 class="font-bold text-3xl">🏢 Works</h2>
+            <div class="bg-[#3f499b] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
+                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl">🏢 Works</h2>
                 <div class="px-4">
-                    <p class="mb-3">個人開発</p>
+                    <p class="font-['Kiwi_Maru'] text-xl mb-3">個人開発</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 justify-start">
                         <Card :slug="'atte'" :image="clock" title="🕑勤怠管理アプリ" period="2024/12~2024/02" :tags="[
                             { label: 'laravel', color: 'bg-red' },
@@ -45,7 +38,7 @@
                     </div>
                 </div>
                 <div class="px-4 mb-2">
-                    <p class="mb-3">案件参画実績</p>
+                    <p class="font-['Kiwi_Maru'] text-xl mb-3">案件参画実績</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 justify-start ">
                         <Card :slug="'recruit'" :image="handshake" title="🏢就職・採用マッチングアプリ開発" period="2024/09~2024/10"
                             :tags="[
@@ -62,10 +55,10 @@
                 </div>
             </div>
 
-            <div class="bg-green w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
-                <h3 class="font-bold mb-3 text-3xl">🛠️ Skills</h3>
+            <div class="bg-[#425394] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
+                <h3 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold mb-3 text-3xl">🛠️ Skills</h3>
                 <div class="px-4 mb-2">
-                    <p class="mb-3 cursor-pointer select-none" @click="showFrontend = !showFrontend">
+                    <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none" @click="showFrontend = !showFrontend">
                         フロントエンド
                         <span class="ml-2">{{ showFrontend ? '▲' : '▼' }}</span>
                     </p>
@@ -78,7 +71,7 @@
                     </transition>
                 </div>
                 <div class="px-4 mb-2">
-                    <p class="mb-3 cursor-pointer select-none" @click="backFrontend = !backFrontend">
+                    <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none" @click="backFrontend = !backFrontend">
                         バックエンド
                         <span class="ml-2">{{ backFrontend ? '▲' : '▼' }}</span>
                     </p>
@@ -91,22 +84,22 @@
                     </transition>
                 </div>
                 <div class="px-4">
-                    <p class="mb-3 cursor-pointer select-none" @click="lowCode = !lowCode">
+                    <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none" @click="lowCode = !lowCode">
                         ローコード
                         <span class="ml-2">{{ lowCode ? '▲' : '▼' }}</span>
                     </p>
 
-                    <div name="fade">
+                    <transition name="fade">
                         <div v-if="lowCode"
                             class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 gap-3 mb-2 justify-start ">
                             <Chart v-for="skill in lowCodeSkills" :key="skill.label" :label="skill.label"
                                 :value="skill.value" />
                         </div>
-                    </div>
+                    </transition>
                 </div>
             </div>
-            <div class="bg-green w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm mb-5">
-                <h2 class="font-bold text-3xl">💼 Career</h2>
+            <div class="bg-[#5f4088] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm mb-10">
+                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl">💼 Career</h2>
                 <div class="py-2 px-5">
 
                     <CareerItem title="🏃‍♂️ 2024年10月 - 現在　フリーランスプログラマーとして活動中" :onClick="() => openModal('freePg')" />
