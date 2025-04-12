@@ -140,7 +140,6 @@
 
 <script setup lang="ts">
 import Card from '@/components/Card.vue'
-import topImg from '@/assets/flower.jpg'
 import dinner from '@/assets/dinner.jpg'
 import Chart from '@/components/Chart.vue'
 import clock from '@/assets/clock.jpg'
