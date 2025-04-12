@@ -11,8 +11,9 @@
                         <p>これからもチーム開発や業務改善に貢献できるよう、技術のキャッチアップと実践を大切にしながら成長を続けていきます。どうぞよろしくお願いいたします。</p>
                     </div>
                 </div>
-                <div class="col-span-1">
-                    <img  src="../assets/portfolio-img.png" alt="" class="w-full max-w-[200px] aspect-square object-cover rounded-full m-auto">
+                <div class="col-span-1 flex items-center justify-center">
+                    <img src="../assets/portfolio-img.png" alt=""
+                        class="w-full max-w-[200px] aspect-square object-cover rounded-full" />
                 </div>
             </div>
 
@@ -58,7 +59,8 @@
             <div class="bg-[#425394] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
                 <h3 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold mb-3 text-3xl p-2">🛠️ Skills</h3>
                 <div class="px-4 mb-2">
-                    <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none" @click="showFrontend = !showFrontend">
+                    <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none"
+                        @click="showFrontend = !showFrontend">
                         フロントエンド
                         <span class="ml-2">{{ showFrontend ? '▲' : '▼' }}</span>
                     </p>
@@ -71,7 +73,8 @@
                     </transition>
                 </div>
                 <div class="px-4 mb-2">
-                    <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none" @click="backFrontend = !backFrontend">
+                    <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none"
+                        @click="backFrontend = !backFrontend">
                         バックエンド
                         <span class="ml-2">{{ backFrontend ? '▲' : '▼' }}</span>
                     </p>
