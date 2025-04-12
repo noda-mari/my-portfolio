@@ -2,15 +2,14 @@
     <div class="welcome" @click="navigateToHome">
         <img :src="welcomeImg" alt="welcome" class="full-image" />
         <div class="overlay">
-            <h1>Portfolio</h1>
-            <h2>NODA MARI</h2>
-            <p>クリックしてご覧ください</p>
+            <h1 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold">Thanks for visiting</h1>
+            <div class="font-['Playwrite_GB_S'] font-bold text-2xl mt-2">Click to continue</div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import welcomeImg from '@/assets/welcome-img.jpg'
+import welcomeImg from '/parpul.jpg'
 import router from '../router';
 
 

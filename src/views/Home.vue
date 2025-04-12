@@ -3,7 +3,7 @@
         <div class="flex flex-col gap-10">
             <div class="grid grid-cols-3 bg-[#7f65a1] w-3/4  m-auto p-3 rounded-sm">
                 <div class="col-span-2">
-                    <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl">💡About me</h2>
+                    <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl p-2">💡About me</h2>
                     <div class="p-3">
                         <p>千葉県在住のフリーランスプログラマーです。</p>
                         <p>プログラミングスクールにてLaravel、PHP、MySQL、Dockerを学びました。</p>
@@ -17,7 +17,7 @@
             </div>
 
             <div class="bg-[#3f499b] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
-                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl">🏢 Works</h2>
+                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl p-2">🗂️ Works</h2>
                 <div class="px-4">
                     <p class="font-['Kiwi_Maru'] text-xl mb-3">個人開発</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 justify-start">
@@ -56,7 +56,7 @@
             </div>
 
             <div class="bg-[#425394] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
-                <h3 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold mb-3 text-3xl">🛠️ Skills</h3>
+                <h3 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold mb-3 text-3xl p-2">🛠️ Skills</h3>
                 <div class="px-4 mb-2">
                     <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none" @click="showFrontend = !showFrontend">
                         フロントエンド
@@ -99,7 +99,7 @@
                 </div>
             </div>
             <div class="bg-[#5f4088] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm mb-10">
-                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl">💼 Career</h2>
+                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl p-2">💼 Career</h2>
                 <div class="py-2 px-5">
 
                     <CareerItem title="🏃‍♂️ 2024年10月 - 現在　フリーランスプログラマーとして活動中" :onClick="() => openModal('freePg')" />
