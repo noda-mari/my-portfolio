@@ -9,6 +9,12 @@
                         <p>プログラミングスクールにてLaravel、PHP、MySQL、Dockerを学びました。</p>
                         <p>現在は、Next.jsとReactを用いた求人アプリの開発、Nuxt.jsとMicrosoft Dynamicsを使用した業務系アプリの開発等の案件参画経験が約半年ございます。</p>
                         <p>これからもチーム開発や業務改善に貢献できるよう、技術のキャッチアップと実践を大切にしながら成長を続けていきます。どうぞよろしくお願いいたします。</p>
+                        <p>ポートフォリオのソースコードは🔗
+                            <a href="https://github.com/noda-mari/my-portfolio.git" target="_blank"
+                                class="text-amber-100 underline hover:text-blue-300">
+                                GitHubで公開中です
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-span-1 flex items-center justify-center">
