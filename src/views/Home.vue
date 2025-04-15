@@ -1,9 +1,10 @@
 <template>
-    <div class="w-full">
+    <div class="w-full max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-10">
         <div class="flex flex-col gap-10">
-            <div class="grid grid-cols-3 bg-[#7f65a1] w-3/4  m-auto p-3 rounded-sm">
+            <div class="grid grid-cols-1 md:grid-cols-3 bg-[#7f65a1] w-full max-w-screen-lg mx-auto p-3 rounded-sm">
                 <div class="col-span-2">
-                    <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl p-2">💡About me</h2>
+                    <h2 class=" font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold p-2">💡About
+                        me</h2>
                     <div class="p-3">
                         <p>千葉県在住のフリーランスプログラマーです。</p>
                         <p>プログラミングスクールにてLaravel、PHP、MySQL、Dockerを学びました。</p>
@@ -19,12 +20,13 @@
                 </div>
                 <div class="col-span-1 flex items-center justify-center">
                     <img src="../assets/portfolio-img.png" alt=""
-                        class="w-full max-w-[200px] aspect-square object-cover rounded-full" />
+                        class="w-40 sm:w-52 md:w-60 aspect-square object-cover rounded-full" />
                 </div>
             </div>
 
-            <div class="bg-[#3f499b] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
-                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl p-2">🗂️ Works</h2>
+            <div class="bg-[#3f499b] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-sm">
+                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold p-2">🗂️ Works
+                </h2>
                 <div class="px-4">
                     <p class="font-['Kiwi_Maru'] text-xl mb-3">個人開発</p>
                     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 justify-start">
@@ -62,8 +64,9 @@
                 </div>
             </div>
 
-            <div class="bg-[#425394] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm">
-                <h3 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold mb-3 text-3xl p-2">🛠️ Skills</h3>
+            <div class="bg-[#425394] w-full max-w-screen-lg mx-auto flex flex-col  p-3 gap-2 rounded-sm">
+                <h3 class="font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 p-2">🛠️
+                    Skills</h3>
                 <div class="px-4 mb-2">
                     <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none"
                         @click="showFrontend = !showFrontend">
@@ -107,36 +110,38 @@
                     </transition>
                 </div>
             </div>
-            <div class="bg-[#5f4088] w-3/4 flex flex-col m-auto p-3 gap-2 rounded-sm mb-10">
-                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold text-3xl p-2">💼 Career</h2>
+            <div class="bg-[#5f4088] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-sm mb-10">
+                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold p-2">💼 Career
+                </h2>
                 <div class="py-2 px-5">
 
-                    <CareerItem title="🏃‍♂️ 2024年10月 - 現在　フリーランスプログラマーとして活動中" :onClick="() => openModal('freePg')" />
+                    <CareerItem date="🏃‍♂️ 2024年10月 - 現在" title="フリーランスプログラマーとして活動中"
+                        :onClick="() => openModal('freePg')" />
                     <div class="mb-5">
                         <li class="career-li">研究業績のマネジメントアプリ開発（４か月）</li>
                         <li class="career-li">就職・採用マッチングアプリのフロントエンド開発（２か月）</li>
                     </div>
 
-                    <CareerItem title="🎪 2011年8月 - 2023年5月　アミューズメント企業にて勤務（アルバイト・正社員）"
+                    <CareerItem date="🎪 2011年8月 - 2023年5月" title="アミューズメント企業にて勤務（アルバイト・正社員）"
                         :onClick="() => openModal('amusement')" />
                     <div class="mb-5">
                         <li class="career-li">商品発注、新人教育、接客指導のリーダーを担当（９年・社員）</li>
                         <li class="career-li">フロント接客（２年・アルバイト）</li>
                     </div>
 
-                    <CareerItem title="🏢 2010年9月 - 2011年7月　金融業（生命保険）にて勤務（個人事業主）"
+                    <CareerItem date="🏢 2010年9月 - 2011年7月　" title="金融業（生命保険）にて勤務（個人事業主）"
                         :onClick="() => openModal('insurance')" />
                     <div class="mb-5">
                         <li class="career-li">新規顧客の開拓、保険の提案、契約の締結‧アフターフォロー（８か月）</li>
                     </div>
 
-                    <CareerItem title="🏪 2005年6月 - 2010年8月　小売企業にて勤務（正社員）"
+                    <CareerItem date="🏪 2005年6月 - 2010年8月　" title="小売企業にて勤務（正社員）"
                         :onClick="() => openModal('convenienceStore')" />
                     <div class="mb-5">
                         <li class="career-li">レジ対応、商品発注、シフト管理、新人スタッフトレーニングを担当（５年）</li>
                     </div>
 
-                    <CareerItem title="🏫 2005年3月 横浜市立鶴見工業学校 化学科 卒業" :onClick="() => openModal('highScool')" />
+                    <CareerItem date="🏫 2005年3月" title="横浜市立鶴見工業学校 化学科 卒業" :onClick="() => openModal('highScool')" />
 
                 </div>
             </div>
