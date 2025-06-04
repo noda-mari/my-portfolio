@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="col-span-1 flex items-center justify-center">
-                    <img src="../assets/portfolio-img02.png" alt=""
+                    <img src="../assets/protfolio-img02.JPG" alt=""
                         class="w-40 sm:w-52 md:w-60 aspect-square object-cover rounded-full" />
                 </div>
             </div>
