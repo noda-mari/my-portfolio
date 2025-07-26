@@ -1,6 +1,6 @@
 <template>
   
-  <component :is="currentHeader" topImg="/beautiful-940542_1280.jpg" />
+  <component :is="currentHeader" topImg="/naiby.jpg" />
 
   <Transition
     enter-active-class="transition duration-300 ease-out"

@@ -46,7 +46,7 @@ const experienceTextColor = computed(() => {
 const data = {
   datasets: [{
     data: [props.value, 100 - props.value],
-    backgroundColor: [getColorByValue(props.value), '#4e5ca3'],
+    backgroundColor: [getColorByValue(props.value), '#4a789b'],
     borderWidth: 0,
   }]
 }

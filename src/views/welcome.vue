@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import welcomeImg from '/parpul.jpg'
+import welcomeImg from '/kier-in-sight-archives-O7srvV2piu0-unsplash.jpg'
 import router from '../router';
 
 
@@ -45,7 +45,7 @@ const navigateToHome: () => void = () => {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #bbd4f0;
+    color: #f3f6f8;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     z-index: 1;

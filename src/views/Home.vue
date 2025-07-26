@@ -1,7 +1,7 @@
 <template>
     <div class="w-full max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-10">
         <div class="flex flex-col gap-10">
-            <div class="grid grid-cols-1 md:grid-cols-3 bg-[#7f65a1] w-full max-w-screen-lg mx-auto p-3 rounded-sm">
+            <div class="grid grid-cols-1 md:grid-cols-3 bg-[#113753] w-full max-w-screen-lg mx-auto p-3 rounded-sm">
                 <div class="col-span-2">
                     <h2 class=" font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold p-2">💡About
                         me</h2>
@@ -24,7 +24,7 @@
                 </div>
             </div>
 
-            <div class="bg-[#3f499b] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-sm">
+            <div class="bg-[#113753] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-sm">
                 <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold p-2">🗂️ Works
                 </h2>
                 <div class="px-4">
@@ -64,7 +64,7 @@
                 </div>
             </div>
 
-            <div class="bg-[#425394] w-full max-w-screen-lg mx-auto flex flex-col  p-3 gap-2 rounded-sm">
+            <div class="bg-[#113753] w-full max-w-screen-lg mx-auto flex flex-col  p-3 gap-2 rounded-sm">
                 <h3 class="font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 p-2">🛠️
                     Skills</h3>
                 <div class="px-4 mb-2">
@@ -110,7 +110,7 @@
                     </transition>
                 </div>
             </div>
-            <div class="bg-[#5f4088] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-sm mb-10">
+            <div class="bg-[#113753] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-sm mb-10">
                 <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold p-2">💼 Career
                 </h2>
                 <div class="py-2 px-5">
