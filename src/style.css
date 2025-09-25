@@ -4,7 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: #1E1A28;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -15,7 +15,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #5983a3, #2b6796);
+  background: radial-gradient(circle at 50% 50%, #f0c9ba 0%, #F4F5F7 70%);
 }
 
 
