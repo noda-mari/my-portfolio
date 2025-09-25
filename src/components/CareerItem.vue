@@ -1,7 +1,7 @@
 <template>
     <div
       @click="onClick"
-      class="bg-naby py-1 px-2 flex flex-col sm:flex-row sm:items-center cursor-pointer rounded-md hover:bg-opacity-80 transition"
+      class="bg-[#c86a58] py-1 px-2 flex flex-col sm:flex-row sm:items-center cursor-pointer rounded-md hover:bg-opacity-80 transition"
     >
       <div class="font-bold text-sm sm:text-base sm:w-[200px]">
         {{ date }}

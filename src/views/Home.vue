@@ -1,7 +1,7 @@
 <template>
     <div class="w-full max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-10">
         <div class="flex flex-col gap-10">
-            <div class="grid grid-cols-1 md:grid-cols-3 bg-[#ca8f7a] w-full max-w-screen-lg mx-auto p-3 rounded-sm">
+            <div class="grid grid-cols-1 md:grid-cols-3 bg-[#ca8f7a] w-full max-w-screen-lg mx-auto p-3 rounded-2xl">
                 <div class="col-span-2">
                     <h2 class=" font-['Genos'] text-2xl sm:text-3xl md:text-4xl font-bold p-2 text-[#c64e2f]">💡About
                         me</h2>
@@ -24,8 +24,8 @@
                 </div>
             </div>
 
-            <div class="bg-[#ca8f7a] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-sm">
-                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold p-2">🗂️ Works
+            <div class="bg-[#ca8f7a] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-2xl">
+                <h2 class="font-['Genos'] text-2xl sm:text-3xl md:text-4xl font-bold p-2 text-[#c64e2f]">🗂️ Works
                 </h2>
                 <div class="px-4">
                     <p class="font-['Kiwi_Maru'] text-xl mb-3">個人開発</p>
@@ -64,8 +64,8 @@
                 </div>
             </div>
 
-            <div class="bg-[#ca8f7a] w-full max-w-screen-lg mx-auto flex flex-col  p-3 gap-2 rounded-sm">
-                <h3 class="font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 p-2">🛠️
+            <div class="bg-[#ca8f7a] w-full max-w-screen-lg mx-auto flex flex-col  p-3 gap-2 rounded-2xl">
+                <h3 class="font-['Genos'] text-2xl sm:text-3xl md:text-4xl font-bold mb-3 p-2 text-[#c64e2f]">🛠️
                     Skills</h3>
                 <div class="px-4 mb-2">
                     <p class="font-['Kiwi_Maru'] text-xl mb-3 cursor-pointer select-none"
@@ -110,8 +110,8 @@
                     </transition>
                 </div>
             </div>
-            <div class="bg-[#ca8f7a] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-sm mb-10">
-                <h2 class="font-['Edu_AU_VIC_WA_NT_Arrows'] text-2xl sm:text-3xl md:text-4xl font-bold p-2">💼 Career
+            <div class="bg-[#ca8f7a] w-full max-w-screen-lg mx-auto flex flex-col p-3 gap-2 rounded-2xl mb-10">
+                <h2 class="font-['Genos'] text-2xl sm:text-3xl md:text-4xl font-bold p-2 text-[#c64e2f]">💼 Career
                 </h2>
                 <div class="py-2 px-5">
 
