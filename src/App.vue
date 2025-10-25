@@ -1,14 +1,19 @@
 <template>
   
-  <component :is="currentHeader" topImg="/naiby.jpg" />
+  <component 
+   v-if="currentHeader" 
+   :is="currentHeader"
+   :topImg="['/neko.png', '/header-sub-img.png']"
+   :subtitle="route.meta.subtitle ?? ''"
+   />
 
   <Transition
-    enter-active-class="transition duration-300 ease-out"
-    enter-from-class="opacity-0 translate-x-5"
-    enter-to-class="opacity-100 translate-x-0"
-    leave-active-class="transition duration-200 ease-in"
-    leave-from-class="opacity-100 translate-x-0"
-    leave-to-class="opacity-0 -translate-x-5"
+    enter-active-class="transition-opacity duration-300 ease-out"
+    enter-from-class="opacity-0"
+    enter-to-class="opacity-100"
+    leave-active-class="transition-opacity duration-200 ease-in"
+    leave-from-class="opacity-100"
+    leave-to-class="opacity-0"
     mode="out-in"
   >
     <RouterView />
@@ -24,6 +29,8 @@ import HeaderSub from '@/components/HeaderSub.vue'
 const route = useRoute()
 
 const currentHeader = computed(() => {
+  // Welcome では何も返さない
+  if (route.name === 'Welcome') return null
   switch (route.meta?.header) {
     case 'sub':
       return HeaderSub

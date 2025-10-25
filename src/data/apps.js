@@ -198,7 +198,7 @@ export const apps = [
   {
     slug: "labo",
     title: "研究業績マネジメントアプリ開発",
-    duration: "2025/01 ~ 2025/05（５か月）",
+    duration: "2025/01 ~ 2025/11（10か月）",
     tags: [
       { label: "Dynamics", color: "bg-[#ad5059]" },
       { label: "Nuxt.js", color: "bg-nuxt text-black" },

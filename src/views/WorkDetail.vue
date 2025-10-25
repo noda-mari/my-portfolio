@@ -5,7 +5,7 @@
       <div class="lg:col-span-3">
         <div class="flex flex-col gap-4">
           <img v-for="(image, index) in app.imageList" :key="index" :src="image" alt="アプリ画面"
-            class="w-full max-w-md rounded border cursor-pointer" @click="openModal(index)" />
+            class="w-full max-w-md rounded border cursor-pointer  transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:opacity-90" @click="openModal(index)" />
         </div>
       </div>
       <div class="lg:col-span-3 flex flex-col gap-6">

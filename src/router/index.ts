@@ -20,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/work/:slug',
     name: 'WorkDetail',
     component: WorkDetail,
-    meta: { header: 'sub' },
+    meta: { header: 'sub', subtitle: 'Work' },
   },
 ]
 

@@ -9,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import welcomeImg from '/kier-in-sight-archives-O7srvV2piu0-unsplash.jpg'
+import welcomeImg from '/liana-mikah-L5cEmk3ucYY-unsplash.jpg'
 import router from '../router';
 
 

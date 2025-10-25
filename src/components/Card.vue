@@ -1,6 +1,6 @@
 <template>
   <RouterLink :to="`/work/${slug}`"class="block">
-    <div class="bg-[#F4F5F7] rounded-[20px] shadow-md overflow-hidden w-[250px] max-w-sm mx-auto">
+    <div class="bg-[#F4F5F7] rounded-[20px] shadow-md overflow-hidden w-[250px] max-w-sm mx-auto cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-lg hover:opacity-90">
       <img :src="image" alt="card image" class="w-full h-[150px] object-cover" />
       <div class="p-[5px]">
         <p class="text-[#2a2d31] font-bold px-[5px] mt-[0] mb-[3px]">{{ title }}</p>
