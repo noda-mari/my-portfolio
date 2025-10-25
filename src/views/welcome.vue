@@ -3,7 +3,6 @@
         <img :src="welcomeImg" alt="welcome" class="full-image" />
         <div class="overlay">
             <h1 class="font-['Edu_AU_VIC_WA_NT_Arrows'] font-bold">Thanks for visiting</h1>
-            <div class="font-['Playwrite_GB_S'] font-bold text-2xl mt-2">Click to continue</div>
         </div>
     </div>
 </template>
@@ -11,11 +10,18 @@
 <script setup lang="ts">
 import welcomeImg from '/liana-mikah-L5cEmk3ucYY-unsplash.jpg'
 import router from '../router';
+import { onMounted } from 'vue';
 
 
 const navigateToHome: () => void = () => {
     router.push("Home")
 }
+
+onMounted(() => {
+  setTimeout(() => {
+    router.push('/home')
+  }, 2000) // ← 2000ms = 2秒
+})
 
 </script>
 
